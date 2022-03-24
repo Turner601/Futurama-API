@@ -1,0 +1,28 @@
+<%- include('../partials/header'); %>
+
+<main class="main main-cast container text-center">
+    <h2 class="main-h2">
+        <%= name %>
+    </h2>
+    <section class="section section-cast">
+        <figure class="figure figure-cast">
+            <div class="row justify-content-center">
+                <% data.forEach(item => { %>
+                    <div class="col-md-3 cast-div">
+                        <figcaption class="figcaption figcap-cast">
+                            <%= item.name %>
+                        </figcaption>
+                        <figcaption class="figcaption figcap-cast">
+                            <%= item.born %>
+                        </figcaption>
+                        <figcaption class="figcaption figcap-cast">
+                            <a href="<%= item.bio.url %>">IMDB Profile</a>
+                        </figcaption>
+                    </div>
+                <% }) %>
+            </div>
+        </figure>
+    </section>
+</main>
+
+<%- include('../partials/footer'); %>

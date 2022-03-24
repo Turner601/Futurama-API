@@ -1,0 +1,30 @@
+<%- include('../partials/header'); %>
+
+<main class="main main-single-character container text-center">
+    <h2 class="main-h2">
+        <%= name %>
+    </h2>
+    <section class="section section-single-character">
+        <img src="<%= data.images.main %>" alt="Character Image" class="img-fluid single-character-image">
+        <figcaption class="figcaption figcap-single-character">
+            Name: <%= data.name.first %> <%= data.name.middle %> <%=data.name.last %>
+        </figcaption>
+        <figcaption class="figcaption figcap-single-character">
+            Age: <%= data.age %>
+        </figcaption>
+        <figcaption class="figcaption figcap-single-character">
+            Gender: <%= data.gender %>
+        </figcaption>
+        <figcaption class="figcaption figcap-single-character">
+            Species: <%= data.species %>
+        </figcaption>
+        <figcaption class="figcaption figcap-single-character">
+            Home Planet: <%= data.homePlanet %>
+        </figcaption>
+        <figcaption class="figcaption figcap-single-character">
+            Occupation: <%= data.occupation %>
+        </figcaption>
+    </section>
+</main>
+
+<%- include('../partials/footer'); %>

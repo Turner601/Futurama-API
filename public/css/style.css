@@ -1,0 +1,86 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #eaeae3;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: red;
+    text-decoration: none;
+    font-size: 26px;
+}
+
+header {
+    padding: 20px 0;
+    background: black;
+}
+
+.header h1 {
+    color: dodgerblue;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.main-h2 {
+    margin: 0;
+    padding: 25px 0;
+    text-transform: capitalize;
+}
+
+.futurama-image {
+    padding-bottom: 25px;
+}
+
+/* Characters */
+.character-image {
+    height: 450px;
+    width: 250px;
+}
+
+.character-name {
+    color: dodgerblue;
+}
+
+.section-single-character {
+    padding: 25px 0;
+}
+
+.figcap-single-character {
+    padding-top: 15px;
+    font-size: 24px;
+}
+
+/* Episodes */
+.episodes-div {
+    border: 2px solid black;
+}
+
+.figure-episodes {
+    height: 100px;
+    width: 400px;
+}
+
+/* Cast */
+.cast-div {
+    margin: 5px;
+    padding: 10px;
+    border: 4px solid black;
+}
+
+/* Footer */
+.footer {
+    padding: 20px 0;
+    background: black;
+}
+
+.colophon, .footer-text {
+    color: dodgerblue;
+    text-transform: capitalize;
+}

@@ -1,0 +1,49 @@
+<%- include('../partials/header'); %>
+
+<main class="main main-episodes container text-center">
+    <h2 class="main-h2">
+        <%= name %>
+    </h2>
+    <section class="section section-episodes">
+        <div class="row">
+            <% data.forEach(item => { %>
+                <div class="col-md-4 episodes-div">
+                    <figure class="figure figure-episodes">
+                        <figcaption class="figcaption figcap-episodes">
+                            <u>Season - Episode</u>
+                        </figcaption>
+                        <figcaption class="figcaption figcap-episodes">
+                            <%= item.number %>
+                        </figcaption>
+                        <figcaption class="figcaption figcap-episodes">
+                            <u>Title</u>
+                        </figcaption>
+                        <figcaption class="figcaption figcap-episodes">
+                            <%= item.title %>
+                        </figcaption>
+                        <figcaption class="figcaption figcap-episodes">
+                            <u>Writers</u>
+                        </figcaption>
+                        <figcaption class="figcaption figcap-episodes">
+                            <%= item.writers %>
+                        </figcaption>
+                        <figcaption class="figcaption figcap-episodes">
+                            <u>Air Date</u>
+                        </figcaption>
+                        <figcaption class="figcaption figcap-episodes">
+                            <%= item.originalAirDate %>
+                        </figcaption>
+                        <figcaption class="figcaption figcap-episodes">
+                            <u>Description</u>
+                        </figcaption>
+                        <figcaption class="figcaption figcap-episodes">
+                            <%= item.desc %>
+                        </figcaption>
+                    </figure>
+                </div>
+            <% }) %>
+        </div>
+    </section>
+</main>
+
+<%- include('../partials/footer'); %>
